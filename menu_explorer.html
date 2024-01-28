@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+		<title>Menu d�roulant en CSS</title>
+		<style type="text/css">
+		#monmenu {
+		font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+		font-size: 90%;
+		font-weight:bold;
+		}
+		#monmenu ul ul {
+		display: none;
+		 position: absolute;
+		 left: 164px; 
+		 top: -1px; 
+		 margin:0px; 
+		 padding: 0px;
+		 /* border: 1px solid #B0B0B0; */
+		 }
+		 #monmenu ul li a{ 
+		 /* border: 1px solid #B0B0B0; */
+		 background:  url(menu4.gif);
+		 padding: 8px 0 0 10px;
+				margin:0;
+		display: block;
+		 }
+		 
+		 #monmenu ul li a:hover{ 
+		/* background : url(menu4.gif) 0 -32px; */
+		padding: 8px 0 0 10px;
+		}
+		
+		#monmenu li {
+		list-style-type: none;
+		 position: relative; 
+		 width: 180px; 
+		 background-color: #E0E0E0;
+		 padding:  2px;
+		 margin: 0;
+		 }
+		#monmenu li:hover, #monmenu li.sfhover {
+		background-color: #B90101;
+		}
+		#monmenu li a {
+		text-decoration:none;
+		}
+		#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4 {
+		display: block;
+		z-index :10;
+		}
+		</style>
+		</head>
+				<body>
+		<div id="monmenu" >
+				<ul class="niveau1">
+					<li><a href="#1" title="Link 1" class="fly">Etudiants &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></a>
+						<ul class="niveau2" style="top : 4px;">
+							<li><a href="listeEtudiant.php?list=true">Consulter la liste</a>
+								<ul class="niveau3">
+									<li><a href="#">GI</a>
+										<ul class="niveau4">
+											<li><a href="listeEtudiant.php?list=4">1ere ann�e</a></li>
+											<li><a href="listeEtudiant.php?list=1">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">TM</a>
+										<ul class="niveau4">
+											<li><a href="listeEtudiant.php?list=5">1ere ann�e</a></li>
+											<li><a href="listeEtudiant.php?list=2">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">GRH</a>
+										<ul class="niveau4">
+											<li><a href="listeEtudiant.php?list=6">1ere ann�e</a></li>
+											<li><a href="listeEtudiant.php?list=3">2eme ann�e</a></li>
+										</ul>							
+									</li>
+								</ul>
+							</li>
+							
+							<li><a href="afficher_note.php">Consulter les notes</a>
+									<ul class="niveau3">
+										<li><a href="#">GI</a>
+											<ul class="niveau4">
+												<li><a href="afficher_note.php?choix=4">1ere ann�e</a></li>
+												<li><a href="afficher_note.php?choix=1">2eme ann�e</a></li>
+											</ul>
+										</li>
+										<li><a href="#">TM</a>
+											<ul class="niveau4">
+												<li><a href="afficher_note.php?choix=5">1ere ann�e</a></li>
+												<li><a href="afficher_note.php?choix=2">2eme ann�e</a></li>
+											</ul>
+										</li>
+										<li><a href="#">GRH</a>
+											<ul class="niveau4">
+												<li><a href="afficher_note.php?choix=6">1ere ann�e</a></li>
+												<li><a href="afficher_note.php?choix=3">2eme ann�e</a></li>
+											</ul>							
+										</li>
+									</ul>
+								</li>
+								<li><a href="Ajout_etudiant.php">Ajouter un etudiant</a></li>
+							<li><a href="#">Emplois du temps</a></li>
+						</ul>
+					</li>
+					<li><a href="#2" title="Link 2">Enseignents   ></a>
+						<ul class="niveau2" >
+							<li><a href="index.php">Liste des enseignents</a></li>
+							<li><a href="www.hotmail.com">Emplois des enseignents</a></li>
+							<li><a href="www.hotmail.com">Emplois des enseignents</a></li>
+						</ul>
+					</li>
+					<li><a href="#3" title="Link 3">Classes</a></li>
+					<li><a href="#4" title="Link 4">Stages</a></li>
+					<li><a href="#4" title="Link 4">Mati�re ></a>
+						<ul class="niveau2">
+							<li><li><a href="#">Voir les mati�res</a>
+								<ul class="niveau3">
+									<li><a href="#">GI</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=4">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=1">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">TM</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=5">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=2">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">GRH</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=6">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=3">2eme ann�e</a></li>
+										</ul>							
+									</li>
+								</ul>
+							</li>
+							<li><li><a href="#">Ajouter une mati�re</a>
+								<ul class="niveau3">
+									<li><a href="#">GI</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=4">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=1">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">TM</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=5">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=2">2eme ann�e</a></li>
+										</ul>
+									</li>
+									<li><a href="#">GRH</a>
+										<ul class="niveau4">
+											<li><a href="afficher_matiere.php?mat=6">1ere ann�e</a></li>
+											<li><a href="afficher_matiere.php?mat=3">2eme ann�e</a></li>
+										</ul>							
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#5" title="Link 5">Bulletins</a></li>
+					<li><a href="#5" title="Link 5">Semestre</a></li>		
+					<li><a href="#5" title="Link 5">Evalutation</a></li>	
+					<li><a href="ajout_devoir.php" title="Ajouter_devoir">Devoirs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></a>
+						<ul class="niveau2">
+						<li><a href="ajout_devoir.php">Ajouter un devoir</a></li>
+						<li><a href="afficher_devoir.php">Voir les devoirs</a></li>
+						</ul>
+					</li>
+					<li><a href="#1">Enseignement &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -></a>
+						<ul class="niveau2" >
+							<li><a href="afficher_enseign.php">Voir les enseignement</a></li>
+							<li><a href="ajout_enseignement.php">Ajouter un enseignement</a></li>
+						</ul>
+					</li>		
+				</ul>
+			</div>
+</body>
+</html>

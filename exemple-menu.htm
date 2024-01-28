@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Menu d�roulant en CSS</title>
+	<title>Document</title>
+</head>
+<body>
+		
+		<style type="text/css">
+		#monmenu {font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;font-size: 90%;font-weight:bold;}
+		#monmenu ul ul {display: none; position: absolute; left: 164px; top: -1px; margin:0px; padding: 0px; border: 1px solid #B0B0B0;}
+		#monmenu li {list-style-type: none; position: relative; width: 160px; background-color: #E0E0E0; padding: 2px; margin: 0px}
+		#monmenu li:hover, #monmenu li.sfhover {background-color: #FFFF70;}
+		#monmenu li a {text-decoration:none;}
+		#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li.sfhover ul.niveau2, #monmenu li li.sfhover ul.niveau3 {display: block}
+		#monmenu li.plus {background-position:right; background-image: url(illustrations/fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid #B0B0B0;}
+		</style>
+		<!--[if lt IE 7]>
+		
+		<script type="text/javascript">
+		
+		// Fonction destin�e � remplacer le "LI:hover" pour IE 6
+		
+		sfHover = function() {
+		
+		var sfEls = document.getElementById("monmenu").getElementsByTagName("li");
+		
+		for (var i=0; i<sfEls.length; i++) {
+		
+		sfEls[i].onmouseover = function() {
+		
+		this.className = this.className.replace(new RegExp(" sfhover"), "");
+		
+		this.className += " sfhover";
+		
+		}
+		
+		sfEls[i].onmouseout = function() {
+		
+		this.className = this.className.replace(new RegExp(" sfhover"), "");
+		
+		}
+		
+		}
+		
+		}
+		
+		if (window.attachEvent) window.attachEvent("onload", sfHover);
+		
+		</script>
+		
+		
+		
+		<![endif]-->
+		</head><body>
+		<div id="monmenu" style="padding-left: 145px;">
+		<h2>Menu � d�ploiement horizontal</h2>
+		<ul class="niveau1">
+			<li> Menu
+				<ul class="niveau2">
+					<li class="plus"><a href="#"><img alt=" " src="exemple-menu-deroulant2_fichiers/bebe.gif" border="none"> Extras</a>
+						<ul class="niveau3">
+							<li><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/note.gif" border="none"> Demander la note</a></li>
+							<li><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/serveuse.gif" border="none"> Draguer la serveuse</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/entree.gif" border="none"> Entr�e</a></li>
+					<li><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/plat.gif" border="none"> Plat</a></li>
+					<li><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/dessert.gif" border="none"> Dessert</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--<h2>Menu � d�ploiement vertical</h2>
+		<ul class="niveau1">
+		<li> Menu
+		<ul class="niveau2" style="left: 0px; top: 22px;">
+		<li class="plus"><a href="http://www.rankspirit.com/indexfr.php"><img alt=" " src="exemple-menu-deroulant2_fichiers/bebe.gif" border="none"> Extras</a>
+		<ul class="niveau3">
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/note.gif" border="none"> Demander
+		la note</a></li>
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/serveuse.gif" border="none"> Draguer
+		la
+		serveuse</a></li>
+		</ul>
+		</li>
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/entree.gif" border="none"> Entr�e</a></li>
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/plat.gif" border="none"> Plat</a></li>
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/dessert.gif" border="none"> Dessert</a></li>
+		<li><a href="http://www.rankspirit.com/indexfr.php">
+		<img alt=" " src="exemple-menu-deroulant2_fichiers/cafe.gif" border="none"> Caf�</a></li>
+		</ul>
+		</li>
+		</ul>-->
+		</div>
+</body>
+</html>

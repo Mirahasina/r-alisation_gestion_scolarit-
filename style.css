@@ -1,0 +1,334 @@
+
+body {
+	/* font-family: Verdana, Arial, Helvetica, sans-serif; */
+	margin: 0;
+	font-size: 80%;
+	/*font-weight: bold;*/
+	background: #FFF;
+	height : 930px;
+	background-attachment : fixed;
+	}
+h2 {
+	/* font: bold 14px Verdana, Arial, Helvetica, sans-serif; */
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+    border: none;
+} 
+option{
+width : 150px;
+}
+/* pre{
+text-align : left;
+font-family: verdana,sans-serif, Bodoni MT,Comic sans MS,tahoma;
+font-size: 15px;
+} */
+
+.entete
+{
+height:160px;
+width:1039px;
+/* border : 1px solid black; */
+position : absolute;
+top : 5px;
+/* left : 54px; */
+/* background : url(entete.png); */
+/* -moz-border-radius: 5px 5px; */
+}
+.ombre
+{
+height:160px;
+width:1040px;
+/* border : 0px solid black; */
+position : absolute;
+top : 9px;
+left : 58px;
+/* background-color : gray; */
+-moz-border-radius: 5px 5px;
+}
+.menu
+{
+/* height : 300px; */
+/* width:163px; */
+/* border : 1px solid black; */
+/* position : absolute; */
+/* top : 175px; */
+/* left : 54px; */
+color: #000;
+font-size: 45px;
+
+/* background-color:white; */
+/* background : url(tete.png) no-repeat; */
+text-align: center;
+/* -moz-border-radius:10px 0px; */
+/* display: flex; */
+}
+#monmenu .niveau1{
+	display: flex;
+	justify-content: space-between;
+	background: #57797E;
+	height: 5%;
+	font-size: 17px;
+	padding-top: 15px;
+	margin: 0 10px 0 10px;
+	border-radius: 10px;
+}
+/* .corp
+{
+height:740px;
+width:870px;
+border : 1px inset black;
+position : absolute;
+top : 174px;
+left : 224px;
+background : url(background.jpg) top right no-repeat;
+background-color :white;
+padding-top:40px;
+-moz-border-radius:10px 10px;
+} */
+.pied
+{
+height:40px;
+width:1045px;
+/* border : 1px solid black; */
+position : absolute;
+top : 956px;
+left : 54px;
+/* color : gray; */
+background-color : white;
+-moz-border-radius: 5px 5px;
+}
+.menu a
+{
+text-decoration : none;
+color : white;
+}
+.connexion2 a
+{
+text-decoration : none;
+color : black;
+}
+.position_titre{
+position : relative;
+/* top : -11px;
+left : 165px; */
+}
+.formulaire{
+border : 1px inset green;
+height : auto;
+width : 470px;
+/* padding : 1px 10px 20px 10px; */
+font-size : 1.1em;
+/* -moz-border-radius: 10px 10px; */
+position : relative;
+/* top : -38px;
+left : 200px; */
+font-weight: bold;
+}
+.connexion2{
+height : 350px;
+position : absolute; 
+width : 152px;
+top : 250px;
+left : 54px;
+padding-left : 10px; 
+padding-top: 20px;
+background: #132A3F;
+border-radius: 15px;
+/* border: 1px solid black ;
+-moz-border-radius: 0px 20px;
+-webkit-border-radius: 20px 20px;
+-o-border-radius: 50px 20px; */
+/* border-radius: 20px 20px; */
+/* background : url(tete.png) no-repeat; */
+}
+.connecter{
+	color: #774747;
+	text-decoration: underline;
+	font-size: 15px;
+	padding-left: 10px;
+}
+.connecterst{
+	font-size: 10px;
+	color: white;
+	padding-top: 20px;
+	font-size: 14px;
+	padding-left: 10px;
+}
+#monmenu {
+/* font-family: trebuchet ms,arial,tahoma,verdana,sans-serif; */
+font-size: 90%;
+font-weight:bold;
+}
+#monmenu ul ul {
+display: none;
+ position: absolute;
+ /* left: 154px; la position des sous menu par rapport a leurs menu superieur  */
+ /* top: -1px;  */
+ margin:0px; 
+ padding: 0px;
+ /* border: 1px solid #B0B0B0; */
+ background: #132A3F;
+ border-radius: 20px;
+ width: 150px;
+ font-size: 15px;
+ }
+ #monmenu ul ul li 	{
+	 width: 120px;
+ }
+ 
+ #monmenu ul li a{ 
+ /* background:  url(menu4.gif); */
+ padding: 2px 0 2px 10px;
+/* display: block; */
+text-decoration: none;
+color: white;
+ }
+ 
+ #monmenu ul li a:hover{ 
+/* background : url(menu4.gif) 0 -32px; */
+ padding: 2px 0 2px 10px;
+}
+ 
+#monmenu li {
+ position: relative; 
+ width: 160px; 
+ /* background-color: #E0E0E0; */
+ padding:  1px;
+ margin: 0px;
+ list-style-type: none;
+ }
+/* #monmenu li:hover {#monmenu li.sfhover */
+/* background-color: #B90101;
+} */
+
+#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3{
+display: block;
+z-index :10;
+}
+/*#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4 {*/
+
+.all{
+	justify-content: center;
+	display: inline;
+}
+.image{
+	width: 200px;
+	height: 100px;
+	border-radius: 74px;
+	margin: 70px 0 0 300px;
+	margin-bottom: 50px;
+}
+
+.imagest{
+	width: 200px;
+	height: 100px;
+	border-radius: 74px;
+	margin: 80px 0 0 400px;
+}
+
+.imagend{
+	width: 200px;
+	height: 100px;
+	border-radius: 74px;
+	margin: 20px 0 0 300px;
+	margin-bottom: 50px;
+}
+
+.imagerd{
+	width: 200px;
+	height: 100px;
+	border-radius: 74px;
+	margin: 20px 0 0 400px;
+}
+
+.même{
+	position: absolute;	
+	padding-top: 80px;
+	padding-left: 650px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 15px;
+}
+.st{
+	justify-content: space-between;
+	display: flex;
+}
+.th{
+	padding-left: 450px;
+}
+.nd{
+	justify-content: space-between;
+	display: flex;
+	padding-top: 60px;
+}
+.rd{
+	justify-content: space-between;
+	display: flex;
+	padding-top: 60px;
+}
+.foot{
+	position: absolute;
+	display: flex;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 15px;
+}
+.phrase{
+	color: #774747;
+	padding-left: 350px;
+	padding-top: 380px;
+	font-size: 20px;
+}
+.phrasest{
+	padding-top: 400px;
+	padding-left: 640px;
+}
+.pied{
+	background: #132A3F;
+	border-radius: 15px;
+	width: 600px;
+	height: 50px;
+	text-align: center;
+	margin-left: 300px;
+	font-size: 17px;
+	bottom: 500px;
+	margin-top: -200px;
+}
+.fin{
+	border-radius: 85px;
+	width: 69px;
+	height: 69px;
+	margin: 145px 0 0 960px;
+}
+.terminer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.name{
+	padding-top: 30px;
+}
+.mdp{
+	padding-top: 20px;
+}
+.valider{
+	margin-left: 20px;
+	width: 100px;
+	border-radius: 8px;
+	border: #132A3F;
+}
+
+.envoyer{
+	background: rgb(133, 170, 175);
+	border: 1px solid none;
+	border-radius: 10px;
+}
